@@ -1,0 +1,200 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0d1117;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: linear-gradient(90deg, #141e30, #243b55);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo h1 {
+    font-size: 28px;
+    color: #ffcc00;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Banner */
+.banner {
+    height: 80vh; /* Adjust height as needed */
+    background: url('banner.png') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+}
+
+.banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.banner-content {
+    position: relative;
+    z-index: 1;
+}
+
+.banner h2 {
+    font-size: 48px;
+    color: #ffcc00;
+    margin-bottom: 10px;
+}
+
+.banner p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.banner .btn-primary {
+    padding: 12px 30px;
+    background: #ffcc00;
+    color: #101010;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.banner .btn-primary:hover {
+    background: #e6b800;
+    transform: scale(1.05);
+}
+
+/* Gamemodes Section */
+#gamemodes {
+    padding: 60px 20px;
+    text-align: center;
+    background: #141e30;
+}
+
+#gamemodes .section-title {
+    font-size: 36px;
+    color: #ffcc00;
+    margin-bottom: 30px;
+}
+
+.gamemodes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.gamemode {
+    background: #243b55;
+    padding: 25px;
+    border-radius: 10px;
+    width: 280px;
+    text-align: left;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+.gamemode:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+.gamemode h3 {
+    font-size: 22px;
+    color: #ffcc00;
+    margin-bottom: 10px;
+}
+
+.gamemode p {
+    font-size: 16px;
+    color: #dcdcdc;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #101010;
+    font-size: 14px;
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+footer .social-links {
+    margin-bottom: 10px;
+}
+
+footer .social-links a {
+    color: #ffcc00;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+footer .social-links a:hover {
+    color: #e6b800;
+}
+
+footer p {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+
+.social-list-other{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.social-list-other-item{
+    margin: 5px;
+    transition: transform 0.3s;
+}
+
+.social-list-other-item :hover{
+    width: 99%;
+    border: 2px solid black;
+}
+a img{
+    width: 97%;
+    border-radius: 3px;
+}
